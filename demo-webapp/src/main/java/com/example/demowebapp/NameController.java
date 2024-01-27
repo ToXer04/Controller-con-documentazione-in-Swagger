@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 public class NameController {
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "OK"),
-            @ApiResponse(responseCode = "400", description = "BAD REQUEST")
+            @ApiResponse(responseCode = "400", description = "BAD REQUEST: MISSING NAME")
     })
     @Operation(summary = "Gets \"Hello\" plus your name back")
     @GetMapping(path = "/name")
@@ -18,7 +18,7 @@ public class NameController {
     }
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "OK"),
-            @ApiResponse(responseCode = "400", description = "BAD REQUEST")
+            @ApiResponse(responseCode = "400", description = "BAD REQUEST: MISSING NAME")
     })
     @Operation(summary = "Gets yours name reversed back")
     @PostMapping("/reversed")
